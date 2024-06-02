@@ -2344,7 +2344,7 @@ button {
     .calculator__menu h3 {
         text-align: center;
         margin-top: 10px;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 600;
     }
 
@@ -2439,7 +2439,7 @@ button {
         gap: 10px;
         justify-content: center;
         
-        margin: 20px auto 0px auto;
+        margin: 10px auto 0px auto;
     }
 
     .calculator__form__submit {
@@ -2473,7 +2473,7 @@ button {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         align-items: center;
-        margin-top: 15px;
+        margin-top: 5px;
         justify-content: center;
     }
 
