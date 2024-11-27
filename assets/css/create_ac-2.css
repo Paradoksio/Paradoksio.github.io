@@ -1,0 +1,126 @@
+:root {
+    --main-pink: rgba(176, 106, 179, 1);
+    --blue-main: rgba(69, 104, 220, 1);
+    --white-1: rgba(250, 242, 251, 1);
+    --white-2: rgba(245, 228, 245, 1);
+    --black-1: rgba(31, 31, 31, 1);
+    --grey-1: rgba(166, 166, 166, 1);
+    --grad-top: rgba(69, 104, 220, 1);
+    --grad-bot: rgba(176, 106, 179, 1);
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    color: var(--black-1);
+}
+
+@media screen and (min-width: 1000px) {
+    .title { 
+        height: 200vh;
+        overflow: hidden;
+    }
+    
+    .title__wrap { 
+        margin-top: 68px;
+    }
+    
+    .footer__images { 
+        margin-top: 24px;
+    }
+
+    .title__head { 
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .title__head p { 
+        font-size: 34px;
+        font-weight: 400;
+        line-height: 51px;
+        text-align: center;
+        max-width: 490px;
+    }
+
+    .top__row { 
+        transform: translateY(-200px);
+    }
+
+    .bot__row { 
+        transform: translateY(200px);
+    }
+
+    .create__account { 
+        top: 100%;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .title { 
+        height: calc(100vh + 963.6px);
+        overflow: hidden;
+    }
+    
+    .title__wrap { 
+        margin-top: 30px;
+    }
+    
+    .footer__images { 
+        margin-top: 24px;
+    }
+
+    .title__head { 
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .title__head p { 
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 36px;
+        text-align: center;
+        max-width: 490px;
+    }
+
+    .footer__title__image { 
+        width: 96px;
+    }
+
+    .top__row { 
+        transform: translateY(0px);
+    }
+
+    .bot__row { 
+        transform: translateY(54px);
+    }
+
+    .create__account { 
+        top: 100%;
+        
+    }
+
+    .reg__card { 
+        gap: 10px;
+        width: 100%;
+
+    }
+    
+    .create__account__container { 
+        padding: 24px;
+    }
+
+    .disc__content { 
+        padding: 30px 0px 0px 0px ;
+    }
+    
+    .disc__text { 
+        padding-bottom: 44px;
+    }
+}

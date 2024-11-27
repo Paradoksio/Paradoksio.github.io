@@ -1,0 +1,299 @@
+:root {
+    --main-pink: rgba(176, 106, 179, 1);
+    --blue-main: rgba(69, 104, 220, 1);
+    --white-1: rgba(250, 242, 251, 1);
+    --white-2: rgba(245, 228, 245, 1);
+    --black-1: rgba(31, 31, 31, 1);
+    --grey-1: rgba(166, 166, 166, 1);
+    --grad-top: rgba(69, 104, 220, 1);
+    --grad-bot: rgba(176, 106, 179, 1);
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    background: rgba(250, 242, 251, 1);
+    color: var(--black-1);
+}
+
+@media screen and (min-width: 1000px) {
+    .main { 
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        position: relative;
+        height: 100vh;
+    }
+
+    .reg__wrapper { 
+        margin: 0 auto;
+    }
+
+    .reg__card { 
+        background-color: #fff;
+        padding: 25px 53px 45px 53px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        min-width: 470px;
+        overflow: hidden;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .reg__card__logo { 
+        width: 64px;
+    }
+
+    .reg__form { 
+        width: 100%;
+    }
+
+    .reg__form h2 { 
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .reg__form__inputs { 
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .reg__form__inputs input { 
+        width: 100%;
+        border: 1px solid rgba(166, 166, 166, 1);
+        border-radius: 15px;
+        padding: 10px 15px;
+        height: 51px;
+    }
+
+    .reg__form__button { 
+        padding: 15px 20px;
+        background: linear-gradient(to bottom, var(--grad-top), var(--grad-bot));
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .reg__reset__pass { 
+        margin-top: -10px;
+        color: rgba(176, 106, 179, 1);
+        font-weight: 600;
+    }
+
+    .reg__another { 
+        position: relative;
+    }
+
+    
+
+    .reg__another::before { 
+        content: "";
+        width: 160px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-173px, -50%);
+    }
+
+    .reg__another::after { 
+        content: "";
+        width: 160px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translate(173px, -50%);
+    }
+
+    .reg__links { 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .reg__link {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px 15px;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .reg__link__border { 
+        position: absolute;
+
+    }
+
+    .reg__footer { 
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .reg__footer a { 
+        color: rgba(176, 106, 179, 1);
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .main { 
+        overflow: hidden;
+        display: flex;
+        width: 100%;
+        position: relative;
+        height: 100vh;
+    }
+
+    .reg__wrapper { 
+        width: 100%;
+    }
+
+    .reg__card { 
+        
+        padding: 25px 24px 45px 24px;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        
+        overflow: hidden;
+        
+    }
+
+    .reg__card__logo { 
+        width: 64px;
+    }
+
+    .reg__form { 
+        width: 100%;
+    }
+
+    .reg__form h2 { 
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .reg__form__inputs { 
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .reg__form__inputs input { 
+        width: 100%;
+        border: 1px solid rgba(166, 166, 166, 1);
+        border-radius: 15px;
+        padding: 10px 15px;
+        height: 51px;
+    }
+
+    .reg__form__button { 
+        padding: 15px 20px;
+        background: linear-gradient(to bottom, var(--grad-top), var(--grad-bot));
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 30px;
+        width: 100%;
+    }
+
+    .reg__reset__pass { 
+        margin-top: -10px;
+        color: rgba(176, 106, 179, 1);
+        font-weight: 600;
+    }
+
+    .reg__another { 
+        position: relative;
+    }
+
+    
+
+    .reg__another::before { 
+        content: "";
+        width: 160px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(-173px, -50%);
+    }
+
+    .reg__another::after { 
+        content: "";
+        width: 160px;
+        height: 1px;
+        background-color: #000;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translate(173px, -50%);
+    }
+
+    .reg__links { 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .reg__link {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px 15px;
+        width: 100%;
+        align-items: center;
+        position: relative;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .reg__link__border { 
+        position: absolute;
+
+    }
+
+    .reg__footer { 
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .reg__footer a { 
+        color: rgba(176, 106, 179, 1);
+        text-decoration: underline;
+    }
+}
